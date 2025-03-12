@@ -1,0 +1,33 @@
+{
+  "name": "chainvotes",
+  "version": "1.0.0",
+  "description": "A blockchain-based voting application using Ethereum that can be deployed on L2 solutions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:optimism": "hardhat run scripts/deploy.js --network optimism-sepolia",
+    "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum-sepolia"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "voting",
+    "l2",
+    "optimism",
+    "arbitrum"
+  ],
+  "author": "iBuildiPawn",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.19"
+  }
+}
