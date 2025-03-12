@@ -14,6 +14,13 @@ ChainVotes is a decentralized voting platform that leverages blockchain technolo
 - **L2 Compatibility**: Designed to work on Ethereum L2 solutions for lower gas fees and faster transactions
 - **User-Friendly Interface**: Modern Next.js frontend with Tailwind CSS
 
+## Deployment
+
+The ChainVotes contract has been deployed to the Optimism Sepolia testnet. For detailed deployment information, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+- **Contract Address**: `0x3eE9A02BC093a59DCA689883cDe341B85F747fCE`
+- **Block Explorer**: [View on Optimism Sepolia Explorer](https://sepolia-optimism.etherscan.io/address/0x3eE9A02BC093a59DCA689883cDe341B85F747fCE)
+
 ## Technology Stack
 
 ### Smart Contracts
@@ -74,6 +81,12 @@ chainvotes/
    npm install
    ```
 
+4. Create a `.env.local` file in the frontend directory:
+   ```
+   NEXT_PUBLIC_CONTRACT_ADDRESS=0x3eE9A02BC093a59DCA689883cDe341B85F747fCE
+   NEXT_PUBLIC_CHAIN_ID=11155420
+   ```
+
 ### Running the Application
 
 1. Start the frontend development server:
@@ -83,6 +96,8 @@ chainvotes/
    ```
 
 2. Open your browser and navigate to `http://localhost:3000`
+
+3. Connect your wallet to the Optimism Sepolia network
 
 ### Deploying Smart Contracts
 
